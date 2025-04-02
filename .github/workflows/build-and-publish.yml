@@ -141,8 +141,16 @@ jobs:
       - name: Generate rulesets in YAML and MRS format
         run: |
           cd custom
-          echo ipleak.net >> ../community/data/geolocation-\!cn && echo browserleaks.org >> ../community/data/geolocation-\!cn
-          go run ./ --datapath=../community/data
+          echo "Listing files in ../community/data:"
+          ls -la ../community/data
+          echo "Checking for potential HTML content in data files:"
+          grep -l "<html" ../community/data/* || echo "No HTML content found"
+          echo "Running with domain list files in '../community/data' directory."
+          go run ./ --datapath=../community/data --debug || {
+            echo "Command failed, displaying partial output from data files:"
+            head -n 20 ../community/data/* | grep -B 5 -A 5 "rel=\"icon\"" || echo "Could not locate the exact error source"
+            exit 1
+          }
           cd ../converter
           mkdir -p ../converted
           go run ./ geosite -f ../custom/publish/geosite.dat -o ../converted

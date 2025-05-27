@@ -1,6 +1,6 @@
 # RFM - Rulesets for META
 
-A comprehensive collection of optimized domain rulesets, maintained with a focus on reliability, frequent updates, and efficient performance. These rulesets are specifically designed to work seamlessly with [META](https://github.com/xixu-me/META).
+A comprehensive collection of optimized rulesets, maintained with a focus on reliability, frequent updates, and efficient performance. These rulesets are specifically designed to work seamlessly with [META](https://github.com/xixu-me/META).
 
 ## Why Choose These Rulesets?
 
@@ -12,7 +12,7 @@ A comprehensive collection of optimized domain rulesets, maintained with a focus
 ### 🚀 Superior Update Mechanism
 
 - **Frequent Updates**: Rulesets are rebuilt and published **multiple times daily** (every 4 hours)
-- **Automatic CDN Cache Purging**: Ensures you always get the freshest rulesets via jsdelivr
+- **Automatic CDN Cache Purging**: Ensures you always get the freshest rulesets via jsDelivr
 
 ### 📊 Comprehensive Data Sources
 

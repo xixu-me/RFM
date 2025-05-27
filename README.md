@@ -46,7 +46,7 @@ The easiest way to use these rulesets is with META, which automates the entire c
 | Ruleset | Description |
 |---------|-------------|
 | `applications.yaml` | Applications recommended for direct connection |
-| `direct.mrs` | Domains serving private/local networks and fulfill specific technical roles |
+| `private.mrs` | Domains serving private/local networks and fulfill specific technical roles |
 | `direct.mrs` | Domains recommended for direct connection |
 | `proxy.mrs` | Domains recommended for proxy connection |
 | `reject.mrs` | Advertisement and tracking domains for blocking |

@@ -51,6 +51,7 @@ The easiest way to use these rulesets is with META, which automates the entire c
 | `proxy.mrs` | Domains recommended for proxy connection |
 | `reject.mrs` | Advertisement and tracking domains for blocking |
 | `gfw.mrs` | Domains in the Great Firewall blocklist |
+| `tld-!cn.mrs` | Top-level domains not used in mainland China |
 | `cncidr.mrs` | China IP CIDR blocks |
 | `lancidr.mrs` | LAN IP CIDR blocks |
 | And more... | Various provider-specific CIDR blocks |

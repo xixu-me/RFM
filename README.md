@@ -172,41 +172,6 @@ rule-providers:
     behavior: domain
     url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/win-spy.mrs
     path: ./rulesets/win-spy.mrs
-  bilibili:
-    type: http
-    interval: 14400
-    format: mrs
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/bilibili.mrs
-    path: ./rulesets/bilibili.mrs
-  youtube:
-    type: http
-    interval: 14400
-    format: mrs
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/youtube.mrs
-    path: ./rulesets/youtube.mrs
-  telegram:
-    type: http
-    interval: 14400
-    format: mrs
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/telegram.mrs
-    path: ./rulesets/telegram.mrs
-  x:
-    type: http
-    interval: 14400
-    format: mrs
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/twitter.mrs
-    path: ./rulesets/x.mrs
-  binance:
-    type: http
-    interval: 14400
-    format: mrs
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/binance.mrs
-    path: ./rulesets/binance.mrs
   xai:
     type: http
     interval: 14400
@@ -249,6 +214,41 @@ rule-providers:
     behavior: domain
     url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/perplexity.mrs
     path: ./rulesets/perplexity.mrs
+  bilibili:
+    type: http
+    interval: 14400
+    format: mrs
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/bilibili.mrs
+    path: ./rulesets/bilibili.mrs
+  youtube:
+    type: http
+    interval: 14400
+    format: mrs
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/youtube.mrs
+    path: ./rulesets/youtube.mrs
+  telegram:
+    type: http
+    interval: 14400
+    format: mrs
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/telegram.mrs
+    path: ./rulesets/telegram.mrs
+  x:
+    type: http
+    interval: 14400
+    format: mrs
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/x.mrs
+    path: ./rulesets/x.mrs
+  binance:
+    type: http
+    interval: 14400
+    format: mrs
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/binance.mrs
+    path: ./rulesets/binance.mrs
   google:
     type: http
     interval: 14400
@@ -291,17 +291,17 @@ rules:
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,Advertising
   - RULE-SET,win-spy,Advertising
-  - RULE-SET,bilibili,bilibili
-  - RULE-SET,youtube,YouTube
-  - RULE-SET,telegram,Telegram
-  - RULE-SET,x,X
-  - RULE-SET,binance,Binance
   - RULE-SET,xai,xAI
   - RULE-SET,openai,OpenAI
   - RULE-SET,gemini,Gemini
   - RULE-SET,notebooklm,NotebookLM
   - RULE-SET,anthropic,Anthropic
   - RULE-SET,perplexity,Perplexity
+  - RULE-SET,bilibili,bilibili
+  - RULE-SET,youtube,YouTube
+  - RULE-SET,telegram,Telegram
+  - RULE-SET,x,X
+  - RULE-SET,binance,Binance
   - RULE-SET,google,Google
   - RULE-SET,microsoft,Microsoft
   - RULE-SET,xget,Xget

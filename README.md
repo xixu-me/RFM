@@ -57,7 +57,7 @@ The easiest way to use these rulesets is with META, which automates the entire c
 
 ### Universal Branch ([`@universal`](https://github.com/xixu-me/RFM/tree/universal))
 
-Contains extended versions of the basic rulesets with more comprehensive coverage.
+Contains rulesets for specific applications/services/regions to provide more granular control.
 
 ## How It Works
 

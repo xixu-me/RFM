@@ -50,10 +50,7 @@ The easiest way to use these rulesets is with META, which automates the entire c
 | `direct.mrs` | Domains recommended for direct connection |
 | `proxy.mrs` | Domains recommended for proxy connection |
 | `reject.mrs` | Advertisement and tracking domains for blocking |
-| `apple@cn.mrs` | Apple services available in China |
-| `google@cn.mrs` | Google services available in China |
 | `gfw.mrs` | Domains in the Great Firewall blocklist |
-| `icloud.mrs` | iCloud-related domains |
 | `cncidr.mrs` | China IP CIDR blocks |
 | `lancidr.mrs` | LAN IP CIDR blocks |
 | And more... | Various provider-specific CIDR blocks |

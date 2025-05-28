@@ -4,11 +4,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "20 2,6,10,14,18,22 * * *"
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - "**/README.md"
 
 jobs:
   build-and-publish-universal-rulesets:

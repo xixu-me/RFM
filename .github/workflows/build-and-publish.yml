@@ -197,6 +197,7 @@ jobs:
           echo "CJXS_ANNOYANCE_LIST_REJECT_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" >> $GITHUB_ENV
           echo "ABP_REJECT_URL=https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt" >> $GITHUB_ENV
           echo "SPAM404_REJECT_URL=https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt" >> $GITHUB_ENV
+          echo "CPBL_REJECT_URL=https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/cpbl-abp-list.txt" >> $GITHUB_ENV
           echo "NOCOIN_REJECT_URL=https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt" >> $GITHUB_ENV
           echo "FANBOYS_SOCIAL_REJECT_URL=https://easylist-downloads.adblockplus.org/fanboy-social.txt" >> $GITHUB_ENV
           echo "PETERLOWE_REJECT_URL=https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext" >> $GITHUB_ENV

@@ -531,7 +531,7 @@ jobs:
           rm tld-!cn.mrs
 
       - name: Release assets
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v1
         with:
           name: "${{ env.RELEASE_TITLE }}"
           tag_name: "${{ env.TAG }}"

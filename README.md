@@ -84,6 +84,9 @@ If you prefer manual configuration, apply the rulesets to your configuration lik
 dns:
   fake-ip-filter:
     - rule-set:fake-ip-filter
+    - rule-set:direct
+    - rule-set:private
+    - rule-set:connectivity-check
 
 rules:
   - RULE-SET,applications,DIRECT
@@ -123,8 +126,15 @@ rule-providers:
     interval: 14400
     format: mrs
     behavior: domain
-    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/fake-ip-filter.mrs
+    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@basic/fake-ip-filter.mrs
     path: ./rulesets/fake-ip-filter.mrs
+  connectivity-check:
+    type: http
+    interval: 14400
+    format: mrs
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/connectivity-check.mrs
+    path: ./rulesets/connectivity-check.mrs
   applications:
     type: http
     interval: 14400

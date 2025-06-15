@@ -81,7 +81,50 @@ This repository employs an advanced GitHub Actions workflow to:
 If you prefer manual configuration, apply the rulesets to your configuration like this:
 
 ```yaml
+dns:
+  fake-ip-filter:
+    - rule-set:fake-ip-filter
+
+rules:
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,lancidr,DIRECT,no-resolve
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,Advertising
+  - RULE-SET,win-spy,Advertising
+  - RULE-SET,xai,xAI
+  - RULE-SET,openai,OpenAI
+  - RULE-SET,gemini,Gemini
+  - RULE-SET,notebooklm,NotebookLM
+  - RULE-SET,anthropic,Anthropic
+  - RULE-SET,perplexity,Perplexity
+  - RULE-SET,rednote,rednote
+  - RULE-SET,bilibili,bilibili
+  - RULE-SET,youtube,YouTube
+  - RULE-SET,telegram,Telegram
+  - RULE-SET,x,X
+  - RULE-SET,binance,Binance
+  - RULE-SET,google,Google
+  - RULE-SET,microsoft,Microsoft
+  - RULE-SET,xget,Xget
+  - RULE-SET,cloudflare,Cloudflare
+  - RULE-SET,speedtest,Speedtest
+  - RULE-SET,direct,Mainland China 🇨🇳
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,telegramcidr,Telegram
+  - RULE-SET,xcidr,X
+  - RULE-SET,googlecidr,Google
+  - RULE-SET,cloudflarecidr,Cloudflare
+  - RULE-SET,cncidr,Mainland China 🇨🇳
+  - MATCH,Others
+
 rule-providers:
+  fake-ip-filter:
+    type: http
+    interval: 14400
+    format: mrs
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/fake-ip-filter.mrs
+    path: ./rulesets/fake-ip-filter.mrs
   applications:
     type: http
     interval: 14400
@@ -215,6 +258,13 @@ rule-providers:
     behavior: domain
     url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/perplexity.mrs
     path: ./rulesets/perplexity.mrs
+  rednote:
+    type: http
+    interval: 14400
+    format: mrs
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/xiaohongshu.mrs
+    path: ./rulesets/rednote.mrs
   bilibili:
     type: http
     interval: 14400
@@ -285,37 +335,6 @@ rule-providers:
     behavior: domain
     url: https://cdn.jsdelivr.net/gh/xixu-me/RFM@universal/speedtest.mrs
     path: ./rulesets/speedtest.mrs
-
-rules:
-  - RULE-SET,applications,DIRECT
-  - RULE-SET,lancidr,DIRECT,no-resolve
-  - RULE-SET,private,DIRECT
-  - RULE-SET,reject,Advertising
-  - RULE-SET,win-spy,Advertising
-  - RULE-SET,xai,xAI
-  - RULE-SET,openai,OpenAI
-  - RULE-SET,gemini,Gemini
-  - RULE-SET,notebooklm,NotebookLM
-  - RULE-SET,anthropic,Anthropic
-  - RULE-SET,perplexity,Perplexity
-  - RULE-SET,bilibili,bilibili
-  - RULE-SET,youtube,YouTube
-  - RULE-SET,telegram,Telegram
-  - RULE-SET,x,X
-  - RULE-SET,binance,Binance
-  - RULE-SET,google,Google
-  - RULE-SET,microsoft,Microsoft
-  - RULE-SET,xget,Xget
-  - RULE-SET,cloudflare,Cloudflare
-  - RULE-SET,speedtest,Speedtest
-  - RULE-SET,direct,Mainland China 🇨🇳
-  - RULE-SET,proxy,PROXY
-  - RULE-SET,telegramcidr,Telegram
-  - RULE-SET,xcidr,X
-  - RULE-SET,googlecidr,Google
-  - RULE-SET,cloudflarecidr,Cloudflare
-  - RULE-SET,cncidr,Mainland China 🇨🇳
-  - MATCH,Others
 ```
 
 ## Updates and Maintenance

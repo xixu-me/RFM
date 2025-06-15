@@ -144,7 +144,6 @@ jobs:
           mkdir -p ../publish
           cp ../converted/*.mrs ../publish/
           mkdir -p ../publish/yaml
-          cp ../dnf/data/yaml/* ../publish/yaml/
           cp ../converted/*.yaml ../publish/yaml/
 
       - name: Push generated rulesets
@@ -406,8 +405,12 @@ jobs:
           echo "LOYALSOLDIER_NTR_URL=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/hidden" >> $GITHUB_ENV
         shell: bash
 
-      - name: Checkout repository
+      - name: Checkout repositories
         uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: xixu-me/Dandified-DLC
+          path: dnf
 
       - name: Prepare workspace
         run: |
@@ -492,13 +495,17 @@ jobs:
             cp ./basic/temp ./basic/${file}.yaml
           done
 
+      - name: Supplement lists
+        run: |
+          cp ./dnf/data/yaml/* ./basic/
+
       - name: Prepare converter
         run: |
           chmod +x converter/bin
 
       - name: Convert to MRS format
         run: |
-          files=(apple@cn direct gfw google@cn greatfire icloud private proxy reject tld-!cn cncidr lancidr cloudflarecidr cloudfrontcidr facebookcidr fastlycidr googlecidr netflixcidr telegramcidr xcidr)
+          files=(apple@cn direct gfw google@cn greatfire icloud private proxy reject tld-!cn cncidr lancidr cloudflarecidr cloudfrontcidr facebookcidr fastlycidr googlecidr netflixcidr telegramcidr xcidr fake-ip-filter)
           cidr_files=(cncidr lancidr cloudflarecidr cloudfrontcidr facebookcidr fastlycidr googlecidr netflixcidr telegramcidr xcidr)
           merged_files=(apple@cn direct gfw google@cn greatfire icloud proxy reject)
           for file in ${files[@]}; do

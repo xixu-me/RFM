@@ -45,6 +45,7 @@ The easiest way to use these rulesets is with META, which automates the entire c
 
 | Ruleset | Description |
 |---------|-------------|
+| `fake-ip-filter.mrs` | Domains that should not be assigned fake IP mappings for connection |
 | `applications.yaml` | Applications recommended for direct connection |
 | `private.mrs` | Domains serving private/local networks and fulfill specific technical roles |
 | `direct.mrs` | Domains recommended for direct connection |

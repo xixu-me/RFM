@@ -131,7 +131,7 @@ jobs:
 
       - name: Supplement lists
         run: |
-          mv ./dnf/data/* ./community/data/
+          cp ./dnf/data/list/* ./community/data/
 
       - name: Generate rulesets in YAML and MRS format
         run: |
@@ -144,6 +144,7 @@ jobs:
           mkdir -p ../publish
           cp ../converted/*.mrs ../publish/
           mkdir -p ../publish/yaml
+          cp ../dnf/data/yaml/* ../publish/yaml/
           cp ../converted/*.yaml ../publish/yaml/
 
       - name: Push generated rulesets
@@ -488,7 +489,7 @@ jobs:
           for file in private tld-!cn; do
             head -n 1 ./basic/${file}.yaml > ./basic/temp
             tail -n +2 ./basic/${file}.yaml | sort -u >> ./basic/temp
-            mv ./basic/temp ./basic/${file}.yaml
+            cp ./basic/temp ./basic/${file}.yaml
           done
 
       - name: Prepare converter

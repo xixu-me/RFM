@@ -37,7 +37,7 @@ A comprehensive collection of optimized rulesets, maintained with a focus on rel
 
 ## Quick Start with META
 
-The easiest way to use these rulesets is with META, which automates the entire configuration process. For usage instructions, refer to the [META Usage Guide](https://github.com/xixu-me/META?tab=readme-ov-file#usage-guide).
+The easiest way to use these rulesets is with META, which automates the entire configuration process. For usage instructions, refer to the [Quick Start of META](https://github.com/xixu-me/META?tab=readme-ov-file#quick-start).
 
 ## Available Rulesets
 

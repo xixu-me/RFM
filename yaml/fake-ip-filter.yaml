@@ -1,0 +1,97 @@
+payload:
+  # -- Top-level wildcards --
+  - "*"
+  - "*.*.stun.*"
+  - "*.*.turn.*"
+  - "*.*.xboxlive.com"
+
+  # -- STUN / TURN / hole-punching --
+  - "stun.*"
+  - "*.stun.*"
+  - "stun.l.google.com"
+  - "stun.services.mozilla.com"
+  - "turn.*"
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - "+.stun.*.*.*.*.*"
+  - "+.stun.playstation.net"
+
+  # -- Xbox / Nintendo --
+  - "xbox.*.*.microsoft.com"
+  - "*.n.n.srv.nintendo.net"
+
+  # -- NTP / time-sync --
+  - "pool.ntp.org"
+  - "*.pool.ntp.org"
+  - "ntp.*.com"
+  - "ntp1.*.com"
+  - "ntp2.*.com"
+  - "ntp3.*.com"
+  - "ntp4.*.com"
+  - "ntp5.*.com"
+  - "ntp6.*.com"
+  - "ntp7.*.com"
+  - "time.*.*"
+  - "time.*.*.*"
+  - "time.*.apple.com"
+  - "time.*.com"
+  - "time1.*.com"
+  - "time1.cloud.tencent.com"
+  - "time2.*.com"
+  - "time3.*.com"
+  - "time4.*.com"
+  - "time5.*.com"
+  - "time6.*.com"
+  - "time7.*.com"
+
+  # -- Apple / iCloud --
+  - "*.apple.com"
+  - "swcdn.apple.com"
+  - "swdist.apple.com"
+  - "swdownload.apple.com"
+  - "swquery.apple.com"
+  - "swscan.apple.com"
+  - "mesu.apple.com"
+  - "*.icloud.com"
+  - "*.icloud-content.com"
+  - "mask.icloud.com"
+  - "mask-h2.icloud.com"
+
+  # -- Other global services --
+  - "*.github.com"
+  - "*.microsoft.com"
+  - "*.windowsupdate.com"
+  - "dl.google.com"
+  - "lens.l.google.com"
+  - "proxy.golang.org"
+  - "dns.adguard.com"
+  - "nas.synology.com"
+
+  # -- Game platforms / CDNs --
+  - "*.steamcontent.com"
+  - "*.steampowered.com"
+  - "*.steamstatic.com"
+  - "*.epicgames.com"
+  - "*.square-enix.com"
+  - "*.ffxiv.com"
+  - "*.finalfantasyxiv.com"
+  - "+.wargaming.net"
+  - "+.wggames.cn"
+  - "+.wotgame.cn"
+  - "+.wowsgame.cn"
+
+  # -- Router / IoT private domains --
+  - "router.asus.com"
+  - "*.router.asus.com"
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "heartbeat.belkin.com"
+  - "+.plex.direct"
+  - "*.direct"
+  - "*.link"
+
+  # -- Misc. TLDs / uncategorised --
+  - "*.arpa"
+  - "+.nflxvideo.net"
+  - "+.xn--fiqs8s"

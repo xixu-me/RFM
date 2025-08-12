@@ -25,24 +25,24 @@ jobs:
         shell: bash
 
       - name: Checkout repositories
-        uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v5
+      - uses: actions/checkout@v5
         with:
           repository: Loyalsoldier/domain-list-custom
           path: custom
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: v2fly/domain-list-community
           path: community
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: xixu-me/Dandified-DLC
           path: dnf
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: MetaCubeX/meta-rules-converter
           path: converter
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: cokebar/gfwlist2dnsmasq
           path: gfwlist2dnsmasq
@@ -220,20 +220,20 @@ jobs:
         shell: bash
 
       - name: Checkout repositories
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: Loyalsoldier/v2ray-rules-dat
           ref: hidden
           path: .
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: Loyalsoldier/domain-list-custom
           path: custom
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: v2fly/domain-list-community
           path: community
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: cokebar/gfwlist2dnsmasq
           path: gfwlist2dnsmasq
@@ -406,8 +406,8 @@ jobs:
         shell: bash
 
       - name: Checkout repositories
-        uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v5
+      - uses: actions/checkout@v5
         with:
           repository: xixu-me/Dandified-DLC
           path: dnf
@@ -557,7 +557,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: basic
           path: basic
@@ -575,7 +575,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: universal
           path: universal

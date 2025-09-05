@@ -48,7 +48,7 @@ jobs:
           path: gfwlist2dnsmasq
 
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22"
           cache-dependency-path: ./custom/go.sum
@@ -239,7 +239,7 @@ jobs:
           path: gfwlist2dnsmasq
 
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version-file: ./custom/go.mod
           cache-dependency-path: ./custom/go.sum

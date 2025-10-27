@@ -417,11 +417,11 @@ jobs:
           mkdir -p merged converter publish redundant ntr list-final publish/yaml
 
       - name: Download rulesets
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: universal
           path: universal
-      - uses: actions/download-artifact@v5
+      - uses: actions/download-artifact@v6
         with:
           name: basic
           path: basic

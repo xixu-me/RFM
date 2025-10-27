@@ -172,7 +172,7 @@ jobs:
           rm to-be-merged/cn.yaml to-be-merged/geolocation-!cn.yaml to-be-merged/category-ads-all.yaml
 
       - name: Upload built rulesets
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: universal
           path: to-be-merged
@@ -387,7 +387,7 @@ jobs:
           curl -sSL ${APPLICATIONS} > to-be-merged/applications.yaml
 
       - name: Upload built rulesets
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: basic
           path: to-be-merged
